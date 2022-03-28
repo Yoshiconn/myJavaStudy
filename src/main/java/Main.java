@@ -9,10 +9,13 @@ public class Main {
         int a;
         a = sc.nextInt();
 
-        while (a != 0) {
-            a--;
-            System.out.println(a);
+        if(a>0){
+                System.out.println("양수");
         }
+        else if(a==0){
+            System.out.println("0");
+        }
+        else
+            System.out.println("음수");
     }
 }
-
