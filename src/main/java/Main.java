@@ -3,38 +3,59 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
 
-        int a, b, c, d;
+        int a = sc.nextInt();
+        int b = sc.nextInt();
 
-        a = sc.nextInt();
-        b = sc.nextInt();
-        c = sc.nextInt();
-        d = sc.nextInt();
+        int cal1, cal2;
 
-        int result = a+b+c+d;
+        if (a == 1) {
+            cal1 = 400;
 
-        if (result==4) {
-            System.out.println("윷");
+        } else if (a == 2) {
+
+            cal1 = 340;
+        } else if (a == 3) {
+
+            cal1 = 170;
+        } else if (a == 4) {
+
+            cal1 = 100;
+        } else {
+
+            cal1 = 70;
         }
-        else if (result==3){
-            System.out.println("걸");
+
+        if (b == 1) {
+
+            cal2 = 400;
+        } else if (b == 2) {
+
+            cal2 = 340;
+        } else if (b == 3) {
+
+            cal2 = 170;
+        } else if (b == 4) {
+
+            cal2 = 100;
+        } else {
+
+            cal2 = 70;
         }
-        else if (result==2){
-            System.out.println("개");
+
+        if ((cal1 + cal2) > 500) {
+
+            System.out.println("angry");
+        } else {
+
+            System.out.println("no angry");
         }
-        else if (result==1){
-            System.out.println("도");
-        }
-        else if (result==0){
-            System.out.println("모");
-        }
-        else {
-            System.out.println("값을 잘못 입력 하였습니다.");
-        }
+
+
     }
 }
+
 
 
 
