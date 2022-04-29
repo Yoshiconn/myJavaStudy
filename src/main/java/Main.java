@@ -1,20 +1,23 @@
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
 
-        int i, s = 0;
-        int a = sc.nextInt();
+        System.out.print("입력: ");
+        int a = s.nextInt();
+        int i, j;
 
-        for(i = 1; i <= a; i++){
-            s+=i;
-            if(s>=a){
-                break;
+        for (i = 1; i < a+1; i++) { // 행 == 가로
+            for (j = a; j > 0; j--) { // 열 == 세로
+                if(i<j){
+                    System.out.print("-");
+                }else {
+                    System.out.print("*");
+                }
             }
+            System.out.println("");
         }
-        System.out.println(s);
     }
 }
 
