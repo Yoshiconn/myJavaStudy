@@ -11,5 +11,6 @@ public class Main {
         int num = sc.nextInt();
         num -= 1;
         System.out.print(iarr[num]);
+
     }
 }
