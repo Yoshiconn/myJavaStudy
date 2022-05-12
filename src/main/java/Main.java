@@ -2,26 +2,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        int[] iarr = new int[10];
 
-        System.out.print("입력: ");
-        int a = s.nextInt();
-        int i, j;
-
-        for (i = 1; i < a+1; i++) { // 행 == 가로
-            for (j = a; j > 0; j--) { // 열 == 세로
-                if(i<j){
-                    System.out.print("-");
-                }else {
-                    System.out.print("*");
-                }
-            }
-            System.out.println("");
+        for (int i = 0; i < iarr.length; i++) {
+            iarr[i] = sc.nextInt();
         }
+        int num = sc.nextInt();
+        num -= 1;
+        System.out.print(iarr[num]);
     }
 }
-
-
-
-
-
